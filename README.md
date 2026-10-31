@@ -15,21 +15,7 @@
 
 ## 2. Блок-схема
 
-```mermaid
-graph TD
-    Start((Начало)) --> Init[L1=7, L2=14, l=0]
-    Init --> Condition{l <= 15?}
-    
-    Condition -- Да --> Loop1[Цикл w1: вывод пробелов слева]
-    Loop1 --> Loop2[Цикл v1: вывод верхних *]
-    Loop2 --> Loop3[Цикл w2: вывод пробелов внутри]
-    Loop3 --> Loop4[Цикл v2: вывод нижних *]
-    Loop4 --> NewLine[Вывод \n]
-    NewLine --> Increment[l++]
-    Increment --> Condition
-    
-    Condition -- Нет --> End((Конец))
-```
+
 
 ## 3. Реализация программы
 
